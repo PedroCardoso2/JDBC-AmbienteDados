@@ -129,7 +129,7 @@ public class Main {
             // Inserir 1000 registros sem transação
             long startTime = System.currentTimeMillis();
 
-            for (int i = 0; i < 1000; i++) {
+            for (int i = 0; i < 10000; i++) {
                 String insertQuery = "INSERT INTO salario (funcionario_id, salario_base, bonus, comissoes, beneficios, data_inicio) " +
                         "VALUES (" + (i + 1) + ", 3000.00, 500.00, 200.00, 300.00, '2024-05-30')";
                 statement.executeUpdate(insertQuery);
